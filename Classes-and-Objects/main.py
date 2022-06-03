@@ -33,3 +33,40 @@ Bob.add_track("UI/UX")
 Bob.get_score()
 
 print(Bob.tracks)
+
+
+
+
+
+
+# class Student:
+#     # [assignment] Skeleton class. Add your code here
+#     def __init__(self, name, age:int, tracks, score):
+#         self.name = name
+#         self.age = age
+#         self.tracks = tracks
+#         self.score = score
+
+#     def change_name(self, n_name):
+#         self.name = n_name
+    
+#     def change_age(self, n_age):
+#         self.age = n_age
+
+#     def add_track(self, n_track):
+#         self.tracks.append(n_track)
+    
+#     def get_score(self):
+#         print(f"{self.name}'s score is {self.score}.")
+
+
+
+# Bob = Student(name="Bob", age=26, tracks=["FE","BE"],score=20.90)
+
+# # Expected methods
+# Bob.change_name("Peter")
+# Bob.change_age(34)
+# Bob.add_track("UI/UX")
+# Bob.get_score()
+
+# print(Bob.tracks)
