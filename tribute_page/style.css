@@ -7,7 +7,7 @@ body {
     font-size: 1.6rem;
     line-height: 1.5;
     text-align: center;
-    color: #333;
+    color: rgb(255, 255, 255);
     margin: 0;
 }
 
@@ -28,18 +28,16 @@ h2 {
 }
 
 a {
-    color: #477ca7;
+    color: #63b4f7;
 }
 
 a:visited {
-    color: #74638f;
+    color: #af83f783;
 }
 
 #main {
-    margin: 30px 8px;
     padding: 15px;
-    border-radius: 5px;
-    background: #eee;
+    background: rgb(29, 29, 29);
 }
 
 @media (max-width: 460px) {
@@ -64,6 +62,7 @@ img {
 
 #img-caption {
     margin: 15px 0 5px 0;
+    color: black;
 }
 
 @media (max-width: 460px) {
@@ -93,4 +92,11 @@ blockquote {
     max-width: 850px;
     margin: 0 auto 50px auto;
     text-align: left;
+}
+
+hr {
+  margin-top: 6rem;
+  margin-bottom: 6rem;
+  border-width: 1px;
+  border-top: 1px
 }

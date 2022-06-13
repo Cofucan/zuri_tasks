@@ -2,7 +2,7 @@ while True:
     try:
         first = float(input("Enter your first number: "))
     except ValueError:
-        print(f"Pls enter an integer or decimal number")
+        print("Pls enter an integer or decimal number")
         continue
     else:
         break
@@ -12,7 +12,7 @@ while True:
     try:
         second = float(input("Enter your second number: "))
     except ValueError:
-        print(f"Pls enter an integer or decimal number")
+        print("Pls enter an integer or decimal number")
         continue
     else:
         break
