@@ -1,0 +1,58 @@
+/* CSS RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: montserrat;
+}
+
+nav {
+    background: rgb(94, 2, 155);
+    height: 80px;
+    width: 100%;
+}
+
+label {
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 50px;
+    font-weight: bold;
+}
+
+nav ul {
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px
+}
+
+nav ul li a {
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    /* text-transform: uppercase;  */
+}
+
+a.active, a:hover {
+    background: rgb(139, 36, 223);
+    transition: .5s;
+}
+
+footer {
+    background: rgb(48, 48, 48);
+    height: 70px;
+    width: 100%;
+    color: aliceblue;
+    text-align: center;
+}
