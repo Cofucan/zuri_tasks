@@ -60,59 +60,37 @@ footer {
 }
 
 main {
-    width: 70vw;
-    height: 85vh;
-    /* margin: auto; */
-    margin-left: 15%;
-    display: grid;
-    grid-template-columns: 50% 1fr;
-    align-items: center;
+    background-color: rgb(243, 243, 243);
+    box-shadow: 0px 10px 30px 5px rgb(207, 207, 207);
+    width: 30%;
+    height: 70vh;
+    padding-top: 2em;
+    /* padding-left: 20vh; */
+    text-align: center;
+    margin: 5em auto;
     justify-content: center;
-    gap: 10px;
-
-    box-sizing: border-box;
+    align-items: center;
+    border-radius: 10px;
 }
 
-.bio {
-    width: 100%;
-    padding-right: 4em;
-}
-
-.bio p {
-    padding-bottom: 6px;
-}
-
-img {
-    width: 570px;
-    /* height: 80%; */
-    object-fit: cover;
-}
-
-.intro h2 {
-    font-size: 60px;
-    padding-bottom: 20px;
-}
-
-.intro p {
-    /* font-size: 60px; */
-    line-height: 1.7;
-    padding-bottom: 20px;
-
+form div {
+    margin: 1em;
 }
 
 button {
-    font-size: 30px;
+    font-size: 25px;
     /* font-weight: bold; */
     color: aliceblue;
     background-color: blueviolet;
-    margin: 20px;
+    margin: 10px;
     margin-left: 0px;
     padding: 10px;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 40px;
+    padding-right: 40px;
     border: none;
     display: inline-block;
     cursor:pointer;
+    border-radius: 5px;
 }
 
 button:hover {
@@ -120,30 +98,12 @@ button:hover {
     transition: .3s;
 }
 
-button a {
-    color: aliceblue;
+input {
+    border: none;
+    width: 300px;
+    padding: 5px;
 }
 
-button a:hover {
-    background: rgb(180, 96, 248);
-}
-
-.skills {
-    padding-bottom: 25px;
-}
-
-.skills ol li {
-    list-style-type: upper-roman;
-}
-
-.hobbies ul li {
-    list-style-type: disc;
-}
-
-.priorities {
-    padding-bottom: 25px;
-}
-
-.priorities li {
-    list-style-type:lower-latin;
+label {
+    color: rgb(89, 0, 141);
 }

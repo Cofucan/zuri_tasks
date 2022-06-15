@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="login.css" />
   </head>
   <body>
     <div>
@@ -13,7 +13,7 @@
         <nav>
           <label for="">Cofucan</label>
           <ul>
-            <li><a href="#">About Me</a></li>
+            <li><a href="index.html">About Me</a></li>
             <li><a href="contact.html">Contact</a></li>
             <li><a href="registration.html">Sign Up</a></li>
             <li><a class="active" href="login.html">Login</a></li>
@@ -22,7 +22,20 @@
       </header>
     </div>
     <div>
-      <main></main>
+      <main>
+        <h2>Log In</h2>
+        <div>
+          <label for="email">Email:</label><br />
+          <input type="email" id="email" name="email" class="input_box" placeholder="Your email" /><br />
+        </div>
+        <div>
+          <label for="password">Password:</label><br />
+          <input type="password" id="password" name="password" class="input_box" placeholder="Your password" /><br />
+        </div>
+        <div>
+          <button type="button" class="sign_up_btn">Sign In</button>
+        </div>
+      </main>
     </div>
     <div>
       <footer>© 2022 | Powered by Cofucan</footer>
