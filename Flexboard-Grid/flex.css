@@ -1,0 +1,136 @@
+/* CSS RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  font-family: montserrat;
+}
+
+.main-container {
+  width: 70vw;
+  height: 100vh;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-container div {
+  width: 23vw;
+  height: 70%;
+  padding: 5%;
+  color: hwb(0 95% 5%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+button {
+  font-size: 20px;
+  font-family: "Lexend Deca";
+  /* font-weight: bold; */
+  /* color: hsl(0, 0%, 95%); */
+  /* background-color: rgb(255, 255, 255); */
+  margin-bottom: 30px;
+  width: 65%;
+  height: 11%;
+  border-color: hsl(0, 0%, 95%);
+  /* border:1% hsl(0, 100%, 52%); */
+  /* border-width: 6px; */
+  border-radius: 40px;
+  /* border-style: solid; */
+  cursor: pointer;
+}
+
+img {
+  height: 60px;
+  width: 100px;
+  margin-bottom: 30px;
+}
+
+h1 {
+  margin-bottom: 50px;
+  text-transform: uppercase;
+  font-size: 60px;
+  font-family: "Big Shoulders Display";
+}
+
+p {
+  margin-bottom: 50%;
+  line-height: 30px;
+  color: hsla(0, 0%, 100%, 0.75);
+  font-size: 18px;
+  font-family: "Lexend Deca";
+}
+
+.box-a {
+  background-color: hsl(31, 77%, 52%);
+  border-radius: 10px 0px 0px 10px;
+}
+
+.box-b {
+  background-color: hsl(184, 100%, 22%);
+}
+
+.box-c {
+  background-color: hsl(179, 100%, 13%);
+  border-radius: 0px 10px 10px 0px;
+}
+
+.box-a button {
+  color: hsl(31, 77%, 52%);
+}
+
+.box-b button {
+  color: hsl(184, 100%, 22%);
+}
+
+.box-c button {
+  color: hsl(179, 100%, 13%);
+}
+
+.box-a button:active {
+  background-color: hsl(31, 77%, 52%);
+  color: hsl(0, 0%, 95%);
+  transition: 0.2s;
+}
+.box-b button:active {
+  background-color: hsl(184, 100%, 22%);
+  color: hsl(0, 0%, 95%);
+  transition: 0.2s;
+}
+.box-c button:active {
+  background-color: hsl(179, 100%, 13%);
+  color: hsl(0, 0%, 95%);
+  transition: 0.2s;
+}
+
+@media screen and (max-width: 800px) {
+  .main-container {
+    /* width: 70vw;
+    height: 100vh; */
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .main-container div {
+    width: 100%;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  button {
+    width: 45%;
+    height: 50px;
+  }
+}
