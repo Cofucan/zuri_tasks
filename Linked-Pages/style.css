@@ -15,6 +15,8 @@ nav {
     background: rgb(94, 2, 155);
     height: 80px;
     width: 100%;
+    display: flex;
+    justify-content: space-between;
 }
 
 nav label {
@@ -33,7 +35,7 @@ nav ul {
 nav ul li {
     display: inline-block;
     line-height: 80px;
-    margin: 0 5px
+    margin: 0 5px;
 }
 
 nav ul li a {
@@ -43,9 +45,10 @@ nav ul li a {
     border-radius: 3px;
 }
 
-a.active, a:hover {
+a.active,
+a:hover {
     background: rgb(139, 36, 223);
-    transition: .5s;
+    transition: 0.5s;
 }
 
 footer {
@@ -54,50 +57,62 @@ footer {
     width: 100%;
     color: aliceblue;
     text-align: center;
-    position: fixed;
+    /* position: fixed; */
     bottom: 0;
-    padding-top: 1.4%;
+    padding-top: 25px;
+}
+
+.content {
+    width: 100%;
 }
 
 main {
-    width: 70vw;
-    height: 85vh;
-    /* margin: auto; */
-    margin-left: 15%;
-    display: grid;
-    grid-template-columns: 50% 1fr;
+    max-width: 1440px;
+    /* min-width: 800px; */
+    padding-left: 7%;
+    padding-right: 7%;
+    min-height: 85vh;
+    margin: auto;
+    display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 10px;
-
+    /* justify-content: center; */
+    gap: 3%;
     box-sizing: border-box;
 }
 
 .bio {
-    width: 100%;
-    padding-right: 4em;
+    flex-basis: 45%;
+    align-self: flex-start;
+    padding-right: 3%;
+    /* order: 2; */
 }
 
 .bio p {
     padding-bottom: 6px;
 }
 
+.image {
+    flex-basis: 55%;
+    align-self: flex-start;
+    /* order: 1; */
+}
+
 img {
-    width: 570px;
-    /* height: 80%; */
+    width: 100%;
+    /* min-width: 375px;
+    max-width: 570px; */
     object-fit: cover;
 }
 
 .intro h2 {
-    font-size: 60px;
-    padding-bottom: 20px;
+    font-size: 3em;
+    padding-bottom: 15px;
 }
 
 .intro p {
     /* font-size: 60px; */
     line-height: 1.7;
     padding-bottom: 20px;
-
 }
 
 button {
@@ -112,12 +127,12 @@ button {
     padding-right: 30px;
     border: none;
     display: inline-block;
-    cursor:pointer;
+    cursor: pointer;
 }
 
 button:hover {
     background-color: rgb(180, 96, 248);
-    transition: .3s;
+    transition: 0.3s;
 }
 
 button a {
@@ -145,5 +160,42 @@ button a:hover {
 }
 
 .priorities li {
-    list-style-type:lower-latin;
+    list-style-type: lower-latin;
+}
+
+@media screen and (max-width: 375px) {
+    nav {
+        height: 70px;
+        align-items: center;
+    }
+
+    nav label {
+        font-size: 2em;
+        line-height: 50px;
+        padding: 0 20px;
+    }
+
+    nav {
+        /* position: absolute; */
+        /* background-color: palevioletred; */
+        top: 50px;
+        left: 0;
+        width: 100%;
+    }
+    
+    .menu-icon {
+        font-size: 2.4em;
+        color: white;
+        line-height: 50px;
+        padding: 0 20px;
+    }
+
+    main {
+        flex-direction: column;
+    }
+
+    .bio {
+        padding-left: 1em;
+        padding-right: 2em;
+    }
 }
