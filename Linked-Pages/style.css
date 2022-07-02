@@ -56,12 +56,13 @@ a:hover {
 }
 
 footer {
+  position: fixed;
+  bottom: 0px;
   background: rgb(48, 48, 48);
   height: 70px;
   width: 100%;
   color: aliceblue;
   text-align: center;
-  /* position: fixed; */
   bottom: 0;
   padding-top: 25px;
 }
